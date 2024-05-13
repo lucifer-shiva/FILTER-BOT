@@ -17,9 +17,9 @@ def is_enabled(value, default):
         return default
 
 # Bot information
-SESSION = environ.get('SESSION', 'TechVJBot')
-API_ID = int(environ.get('API_ID', '29423039'))
-API_HASH = environ.get('API_HASH', '77e15ebefc8d9f9e5e4132ca3e76eba5')
+SESSION = environ.get('SESSION', 'File Store')
+API_ID = int(environ.get('API_ID', '21040551'))
+API_HASH = environ.get('API_HASH', 'b7ced2002dd3d63f7db14efe574a2394')
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 # Bot settings
@@ -31,7 +31,7 @@ SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5
 
 # Admins, Channels & Users
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002055014606'))
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6465256721').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7031585434').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002128250615').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
@@ -50,7 +50,7 @@ FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Terabox1:Terabox@clone.ozf4izy.mongodb.net/?retryWrites=true&w=majority&appName=clone")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://saidhanush1029:saidhanush1029@filter.1glgefq.mongodb.net/?retryWrites=true&w=majority&appName=filter")
 DATABASE_NAME = environ.get('DATABASE_NAME', "luciferbotz")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'luciferbotzcollection')
 
